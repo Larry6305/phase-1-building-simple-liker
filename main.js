@@ -23,3 +23,16 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("modal");
+
+  if (!modal) {
+    console.error("Modal element not found!");
+    return;
+  }
+
+  // Keep the modal hidden initially
+  modal.classList.add("hidden");
+});
+
